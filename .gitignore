@@ -1,0 +1,24 @@
+# Visual Studio
+.vs/
+**/.vs/
+
+# Build output
+[Bb]in/
+[Oo]bj/
+Debug/
+Release/
+x64/
+x86/
+
+# Visual Studio user files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Blender
+*.blend
+
+# vcpkg
+**/vcpkg/
+
