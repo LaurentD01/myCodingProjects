@@ -728,25 +728,25 @@ int main()
 
     // load and create a texture 
     // -------------------------
-    unsigned int texture1 = loadTexture("pixelNavePiBlur.png", true, GL_REPEAT, GL_REPEAT);
-    unsigned int texture2 = loadTexture("pallaDiCannone.png", true, GL_REPEAT, GL_REPEAT);
-    unsigned int textureHeart = loadTexture("cuore.png");
-    unsigned int textureSkull = loadTexture("teschio.png");
-    unsigned int textureEnemyShip = loadTexture("naviNemiche.png", true, GL_REPEAT, GL_REPEAT);
-    unsigned int textureGameOver = loadTexture("gameOver.png");
-    unsigned int textureVictory = loadTexture("Vittoria.png");
-    unsigned int textureMenu = loadTexture("SfondoDiProva.png");
-    unsigned int textureOpzioni = loadTexture("SfondoOpzioni1.png");
-    unsigned int textureSottoScritte = loadTexture("ImmagineSottoScritte.png");
-    unsigned int textureLogo = loadTexture("LogoGioco.png");
-    unsigned int textureGioco = loadTexture("SfondoGioco.png", true, GL_REPEAT, GL_REPEAT, GL_NEAREST, GL_NEAREST);
-    unsigned int textureCoin = loadTexture("moneta.png");
+    unsigned int texture1 = loadTexture("resources/images/pixelNavePiBlur.png", true, GL_REPEAT, GL_REPEAT);
+    unsigned int texture2 = loadTexture("resources/images/pallaDiCannone.png", true, GL_REPEAT, GL_REPEAT);
+    unsigned int textureHeart = loadTexture("resources/images/cuore.png");
+    unsigned int textureSkull = loadTexture("resources/images/teschio.png");
+    unsigned int textureEnemyShip = loadTexture("resources/images/naviNemiche.png", true, GL_REPEAT, GL_REPEAT);
+    unsigned int textureGameOver = loadTexture("resources/images/gameOver.png");
+    unsigned int textureVictory = loadTexture("resources/images/Vittoria.png");
+    unsigned int textureMenu = loadTexture("resources/images/SfondoDiProva.png");
+    unsigned int textureOpzioni = loadTexture("resources/images/SfondoOpzioni1.png");
+    unsigned int textureSottoScritte = loadTexture("resources/images/ImmagineSottoScritte.png");
+    unsigned int textureLogo = loadTexture("resources/images/LogoGioco.png");
+    unsigned int textureGioco = loadTexture("resources/images/SfondoGioco.png", true, GL_REPEAT, GL_REPEAT, GL_NEAREST, GL_NEAREST);
+    unsigned int textureCoin = loadTexture("resources/images/moneta.png");
 
-    unsigned int textureExplosion1 = loadTexture("esplosione1.png"); //textures esplosione proiettile
-    unsigned int textureExplosion2 = loadTexture("esplosione2.png");
-    unsigned int textureExplosion3 = loadTexture("esplosione3.png");
-    unsigned int textureExplosion4 = loadTexture("esplosione4.png");
-    unsigned int textureExplosion5 = loadTexture("esplosione5.png");
+    unsigned int textureExplosion1 = loadTexture("resources/images/esplosione1.png"); //textures esplosione proiettile
+    unsigned int textureExplosion2 = loadTexture("resources/images/esplosione2.png");
+    unsigned int textureExplosion3 = loadTexture("resources/images/esplosione3.png");
+    unsigned int textureExplosion4 = loadTexture("resources/images/esplosione4.png");
+    unsigned int textureExplosion5 = loadTexture("resources/images/esplosione5.png");
 
     //Vettore per accedere alle texture tramite indice nel loop
     std::vector<unsigned int> expTexs;
