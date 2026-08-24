@@ -798,7 +798,7 @@ int main()
         if ((gameState == STATE_MENU || gameState == STATE_OPTIONS) && engine)
         {
             if (!menuMusic) {
-                menuMusic = engine->play2D("MusicaMenu1.mp3", true, false, true);
+                menuMusic = engine->play2D("resources/media/MusicaMenu1.mp3", true, false, true);
                 menuMusic->setVolume(Volume);
             }
         }
@@ -807,7 +807,7 @@ int main()
         if (gameState == STATE_PLAYING && engine)
         {
             if (!gameMusic) {
-                gameMusic = engine->play2D("MusicaGameplay.mp3", true, false, true);
+                gameMusic = engine->play2D("resources/media/MusicaGameplay.mp3", true, false, true);
                 if (gameMusic) {
                     gameMusic->setVolume(Volume);
                 }
@@ -1252,7 +1252,7 @@ int main()
                         if (boss.explTimer <= 0.0f) {
                             boss.explTimer = 0.001f;
                             if (engine) {
-                                irrklang::ISound* s = engine->play2D("esplosioneAudio.mp3", false, false, true);
+                                irrklang::ISound* s = engine->play2D("resources/media/esplosioneAudio.mp3", false, false, true);
                                 if (s) s->setVolume(Volume);
                             }
                         }
@@ -1268,7 +1268,7 @@ int main()
                             if (n.explTimer <= 0.0f) {
                                 n.explTimer = 0.001f;
                                 if (engine) {
-                                    irrklang::ISound* s = engine->play2D("esplosioneAudio.mp3", false, false, true);
+                                    irrklang::ISound* s = engine->play2D("resources/media/esplosioneAudio.mp3", false, false, true);
                                     if (s) s->setVolume(Volume);
                                 }
                             }
@@ -1309,7 +1309,7 @@ int main()
                     // Timer esplosione player e SUONO colpo ricevuto
                     player.explTimer = 0.001f;
                     if (engine) {
-                        irrklang::ISound* s = engine->play2D("esplosioneAudio.mp3", false, false, true);
+                        irrklang::ISound* s = engine->play2D("resources/media/esplosioneAudio.mp3", false, false, true);
                         if (s) s->setVolume(Volume);
                     }
                     break;
@@ -1420,7 +1420,7 @@ int main()
             }
 
             if (!gameOverSound && engine) {
-                gameOverSound = engine->play2D("GameOver.mp3", false, false, true);
+                gameOverSound = engine->play2D("resources/media/GameOver.mp3", false, false, true);
                 if (gameOverSound) {
                     gameOverSound->setVolume(Volume);
                 }
@@ -1491,7 +1491,7 @@ int main()
                 gameMusic = nullptr;
             }
             if (!victorySoundPlayed && engine) {
-                engine->play2D("suonoVittoria.mp3", false);
+                engine->play2D("resources/media/suonoVittoria.mp3", false);
                 victorySoundPlayed = true;
             }
 
@@ -1684,7 +1684,7 @@ void processInput(GLFWwindow* window)
         proiettiliPlayer.push_back(p);
         //genero un suono ogni volta che parte un proiettile
         if (engine) {
-            irrklang::ISound* s = engine->play2D("cannone2.wav", false, false, true);
+            irrklang::ISound* s = engine->play2D("resources/media/cannone2.wav", false, false, true);
             if (s) s->setVolume(Volume);
         }
     }
