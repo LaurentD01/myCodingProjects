@@ -1,6 +1,6 @@
 # Project Portfolio
 
-This repository collects the projects developed during my Computer Engineering studies at Politecnico di Torino, spanning object-oriented programming, game development, and data persistenc, which I have been most involved in and that i consider noteworthy.
+This repository collects the projects developed during my Computer Engineering studies at Politecnico di Torino, spanning object-oriented programming, game development, and data persistence, which I have been most involved in and that i consider noteworthy.
 
 ---
 
@@ -16,7 +16,7 @@ A 2D arcade game built with OpenGL: defend the harbor from endless waves of enem
 
 **Tech stack:** OpenGL
 
-📁 [Go to project](./PirateAttack OpenGL)
+📁 [Go to project](./PirateAttack%20OpenGL)
 
 ---
 
@@ -33,7 +33,7 @@ Backend application for a social network, handling users, friendships, groups, a
 
 **Tech stack:** Java, Hibernate ORM, JPA, H2 (in-memory database)
 
-📁 [Go to project](./Social Java)
+📁 [Go to project](./Social%20Java)
 
 ---
 
