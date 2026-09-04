@@ -14,26 +14,6 @@ import jakarta.persistence.EntityTransaction;
  * <br>
  * This class allows performing the CRUD (Create Retrieve Update and Delete)
  * operations for a specific entity through the JPA API.
- * <p>
- * The recommended use involves:
- * <ul>
- * <li> define a new class that extends this one with the 
- *      appropriate type parameters: {@code E r}is the entity class
- *      and I is the id type, e.g.
- * 
- *      <pre>class PersonRepo extends GenericRepository<Person,String> { ... }</pre>
- * <li> define an attribute of the newly created repo type to represent the 
- *      collection of objects and to perform all operations
- * <li> use the provided methods to perform the CRUD operations:
- * <ul>
- *      <li> {@link #save(E)} to Create the record in the db corresponding to a given object
- *      <li> {@link #findById(I)} or {@link #findAll()} to Retrieve the info
- *      <li> {@link #update(E)} to Update thd db to reflect the object changes
- *      <li> {@link #delete(E)} to Delete the object
- * </ul>
- * <li> add additional methods in the specific repo class if you need to execute ad-hoc queries
- * </ul>
- * This class uses the {@link JPAUtil} class to create the {@link jakarta.persistence.EntityManager}
  */
 public class GenericRepository<E, I> {
 
