@@ -1,40 +1,42 @@
-### A couple of projects that show my knowledge and skills.
+# Project Portfolio
 
-# Pirate Attack - 2D Pixel Art Wave-Based Arcade Shooter
+This repository collects the projects developed during my Computer Engineering studies at Politecnico di Torino, spanning object-oriented programming, game development, and data persistenc, which I have been most involved in and that i consider noteworthy.
 
-<img width="940" height="519" alt="PirateAttack_Menu" src="https://github.com/user-attachments/assets/3965d79a-7d78-49e0-9ef7-59a0e315ee1a" />
-<br>
-<br>
+---
 
-## ⚓ Protect the Harbor
+## ⚓ Pirate Attack - 2D Pixel Art Wave-Based Arcade Shooter
 
-Survive endless waves of enemy ships and defend the harbor from destruction. Enemy ships enter from the right side of the screen and attempt to crash into the harbor, damaging it on impact.
+A 2D arcade game built with OpenGL: defend the harbor from endless waves of enemy ships, face bosses every third wave, and collect power-ups to strike back.
 
-<img width="938" height="519" alt="PirateAttack_1" src="https://github.com/user-attachments/assets/33d91d8f-7b6d-44ee-a9a1-8a6498eb6238" />
-<br>
-<br>
+**Key features:**
+- Enemy wave system with increasing difficulty
+- Boss battles every third wave, with two attack patterns (aimed shot and fan shot)
+- Drop system: destroyed ships can release health or special power-ups
+- Pixel art and game loop built from scratch
 
-## 👹 Boss Battles
+**Tech stack:** OpenGL
 
-Every third wave is a boss wave. Bosses can attack in two ways:
+📁 [Go to project](./PirateAttack OpenGL)
 
-Aimed Shot — a projectile fired directly toward the player's current position.
+---
 
-Fan Shot — multiple projectiles fired in a wide spread.
+## 👥 Social Network
 
-<img width="935" height="519" alt="PirateAttack_Boss2atk" src="https://github.com/user-attachments/assets/cb1d32fb-0119-4296-8bd6-9fe94c117672" />
-<br>
-<br>
+Backend application for a social network, handling users, friendships, groups, and posts, with persistence powered by JPA/Hibernate.
 
-## 💰 Drops & Special Attacks
+**Key features:**
+- **Subscription**: user registration with unique code and custom exception handling
+- **Friendship**: bidirectional friendship management
+- **Groups**: create, update, and delete groups, with user membership
+- **Statistics**: compute stats (user with most friends, largest group)
+- **Posts**: post creation with unique id, timestamp, and paginated retrieval (own posts and friends' posts) via custom JPQL queries
 
-Destroyed enemy ships have a chance to drop health or a special coin. Collecting the coin gives you a powerful Fan Shot, allowing you to fire the same spread attack used by the bosses, but only once.
+**Tech stack:** Java, Hibernate ORM, JPA, H2 (in-memory database)
 
-<img width="939" height="517" alt="PirateAttack_BossDrops" src="https://github.com/user-attachments/assets/7a7ba279-94bc-4c45-88b3-d1b939d43e6d" />
-<br>
-<br>
+📁 [Go to project](./Social Java)
 
-## 🚢 Protect the harbor. Survive the waves. Defeat the bosses... Or join the dead. 💀
+---
 
-<img width="937" height="563" alt="PirateAttack_GameOver" src="https://github.com/user-attachments/assets/faaaff76-a6fa-43bb-986a-2d34f5dc87a2" />
+## Author
 
+Recent Computer Engineering graduate from Politecnico di Torino, Laurent Donzé.
