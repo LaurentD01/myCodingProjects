@@ -1,0 +1,29 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+  <persistence-unit name="socialPU">
+      <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+      <properties>
+          <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
+           <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:file:./data/socialdb"/>
+          <property name="jakarta.persistence.jdbc.user" value="sa"/>
+          <property name="jakarta.persistence.jdbc.password" value=""/>
+          <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+          <property name="hibernate.hbm2ddl.auto" value="update"/>
+          <property name="hibernate.show_sql" value="true"/>
+          <property name="hibernate.format_sql" value="true"/>
+      </properties>
+  </persistence-unit>
+
+  <persistence-unit name="socialPUTest">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <properties>
+        <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
+        <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:mem:testsocialdb;DB_CLOSE_DELAY=-1"/>
+        <property name="jakarta.persistence.jdbc.user" value="sa"/>
+        <property name="jakarta.persistence.jdbc.password" value=""/>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+        <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+        <property name="hibernate.show_sql" value="true"/>
+        <property name="hibernate.format_sql" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
